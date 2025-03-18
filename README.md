@@ -1,5 +1,9 @@
 # VIP-Tablet
 
+![Screenshot 2025-03-18 193003](https://github.com/user-attachments/assets/75052c9d-cd75-4e71-b28f-95fcb8eaa765)
+
+![Screenshot 2025-03-18 193008](https://github.com/user-attachments/assets/53d25acf-2574-476b-8aed-6b079a72946d)
+
 
 Documentation:
 
