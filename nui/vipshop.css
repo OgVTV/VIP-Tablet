@@ -1,0 +1,195 @@
+#shop-logo {
+    display: block; 
+    margin: 0 auto; 
+    max-width: 10%; 
+    height: auto; 
+}
+
+.red-text {
+    color: red; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: transparent; 
+    color: black;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+#shop-container {
+    width: 60%; 
+    max-height: 70vh; 
+    padding: 20px;
+    background: linear-gradient(to bottom, #ff5733, #ffcc33); 
+    border-radius: 10px;
+    color: white;
+    opacity: 1; 
+    transition: opacity 0.5s ease; 
+    position: relative; 
+    z-index: 0; 
+    overflow: auto; 
+}
+
+#shop-container::-webkit-scrollbar {
+    width: 12px; 
+}
+
+#shop-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px; 
+}
+
+#shop-container::-webkit-scrollbar-thumb {
+    background: rgba(255, 0, 0, 0.8); 
+    border-radius: 10px; 
+}
+
+#shop-container::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #ff0000, #ff7f00); 
+}
+
+.hidden {
+    opacity: 0; 
+    pointer-events: none; 
+}
+
+h1 {
+    text-align: center;
+}
+
+#items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.shop-item {
+    width: calc(25% - 20px); 
+    margin: 10px; 
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); 
+    border: 2px solid #444; 
+    border-radius: 8px; 
+    padding: 10px; 
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.shop-item:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+}
+
+.shop-item h2 {
+    font-size: 14px; 
+    margin: 5px 0; 
+}
+
+.shop-item img {
+    width: 80px; 
+    height: 80px; 
+}
+
+.shop-item button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #ff6f20; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+.shop-item button:hover {
+    background-color: #ff3d00; 
+}
+
+#confirmation-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+}
+
+.modal-content {
+    background: #333; 
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    font-size: 18px; 
+    color: white; 
+}
+
+#confirm-buy, #cancel-buy {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+#confirm-buy {
+    background-color: #28a745; 
+    color: white; 
+}
+
+#cancel-buy {
+    background-color: #dc3545; 
+    color: white; 
+}
+
+#confirm-buy:hover {
+    background-color: #218838; 
+}
+
+#cancel-buy:hover {
+    background-color: #c82333; 
+}
+
+.close-button {
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    font-size: 24px; 
+    color: rgba(255, 0, 0, 0.8); 
+    background: rgba(255, 165, 0, 0.6); 
+    border: 2px solid rgba(255, 0, 0, 0.8); 
+    border-radius: 8px; 
+    padding: 5px; 
+    cursor: pointer; 
+    transition: background 0.3s ease, border-color 0.3s ease; 
+}
+
+.close-button:hover {
+    background: rgba(255, 0, 0, 0.8); 
+    border-color: rgba(255, 165, 0, 0.8); 
+    color: rgba(255, 255, 255, 0.9); 
+}
+
+
+
+
+
+
+
+
+
